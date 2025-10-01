@@ -1,7 +1,8 @@
-import React from 'react'
+import DashboardScreen from "../../dashboard/screen/DashboardScreen";
 
-export const TabRoutes = () => {
-  return (
-    <div>TabRoutes</div>
-  )
-}
+const TAB_ROUTES = [
+  { name: "Dashboard", component: DashboardScreen },
+];
+
+
+export default TAB_ROUTES;

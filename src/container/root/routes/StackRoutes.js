@@ -1,7 +1,8 @@
-import React from 'react'
+import LoginScreen from "../../login/screen/LoginScreen";
 
-export const StackRoutes = () => {
-  return (
-    <div>StackRoutes</div>
-  )
-}
+const STACK_ROUTES = [
+  { name: "Login", component: LoginScreen, options: { headerShown: false } },
+];
+
+
+export default STACK_ROUTES;
