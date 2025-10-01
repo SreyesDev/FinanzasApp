@@ -1,14 +1,15 @@
-import React from 'react'
-import { SafeAreaView, Text, View } from 'react-native';
+import React from 'react';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import RootScreen from './src/container/root/navigation/RootScreen';
+
 
 const App = () => {
   return (
-    <View>
-      <SafeAreaView>
-        <Text>Hello, World!</Text>
-      </SafeAreaView>
-    </View>
+    <SafeAreaProvider>
+      <RootScreen />
+    </SafeAreaProvider>
   );
 };
+
 
 export default App;
